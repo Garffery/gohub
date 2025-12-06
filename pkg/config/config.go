@@ -50,7 +50,6 @@ func loadConfig() {
 }
 
 func loadEnv(envSuffix string) {
-
 	// 默认加载 .env 文件，如果有传参 --env=name 的话，加载 .env.name 文件
 	envPath := ".env"
 	if len(envSuffix) > 0 {
@@ -99,7 +98,8 @@ func internalGet(path string, defaultValue ...interface{}) interface{} {
 		}
 		return nil
 	}
-	return viper.Get(path)
+	res := viper.Get(path)
+	return res
 }
 
 // GetString 获取 String 类型的配置信息
