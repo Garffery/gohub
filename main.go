@@ -38,6 +38,8 @@ func main() {
 	// 初始化 Logger
 	bootstrap.SetupLogger()
 
+	gin.SetMode(gin.ReleaseMode)
+
 	// 运行服务
 	err := router.Run(":" + config.Get("app.port"))
 	if err != nil {
