@@ -33,6 +33,9 @@ func main() {
 	// 初始化 DB
 	fmt.Println("数据库初始化开始")
 	bootstrap.SetupDB()
+
+	// 初始化 Redis
+	bootstrap.SetupRedis()
 	fmt.Println("数据库初始化完成")
 
 	// 初始化路由绑定
