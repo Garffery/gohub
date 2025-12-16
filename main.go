@@ -27,6 +27,9 @@ func main() {
 	// new 一个 Gin Engine 实例
 	router := gin.New()
 
+	// 初始化 Logger
+	bootstrap.SetupLogger()
+
 	// 初始化 DB
 	fmt.Println("数据库初始化开始")
 	bootstrap.SetupDB()
@@ -34,9 +37,6 @@ func main() {
 
 	// 初始化路由绑定
 	bootstrap.SetupRoute(router)
-
-	// 初始化 Logger
-	bootstrap.SetupLogger()
 
 	gin.SetMode(gin.ReleaseMode)
 
