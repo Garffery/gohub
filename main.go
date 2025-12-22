@@ -41,7 +41,6 @@ func main() {
 
 	// 初始化路由绑定
 	bootstrap.SetupRoute(router)
-
 	gin.SetMode(gin.ReleaseMode)
 
 	sms.NewSMS().Send("这里填入你的手机号", sms.Message{
