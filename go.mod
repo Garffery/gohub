@@ -20,8 +20,11 @@ require (
 )
 
 require (
+	github.com/gertd/go-pluralize v0.2.1
+	github.com/iancoleman/strcase v0.3.0
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d
 	github.com/redis/go-redis/v9 v9.0.4
+	github.com/spf13/cobra v1.10.2
 )
 
 require (
@@ -59,7 +62,6 @@ require (
 	github.com/sagikazarmark/locafero v0.11.0 // indirect
 	github.com/sourcegraph/conc v0.3.1-0.20240121214520-5f936abd7ae8 // indirect
 	github.com/spf13/afero v1.15.0 // indirect
-	github.com/spf13/cobra v1.10.2 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
