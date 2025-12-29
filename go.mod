@@ -20,6 +20,7 @@ require (
 )
 
 require (
+	github.com/bxcodec/faker/v3 v3.8.1
 	github.com/gertd/go-pluralize v0.2.1
 	github.com/iancoleman/strcase v0.3.0
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d
